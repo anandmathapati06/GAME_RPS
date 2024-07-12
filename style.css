@@ -1,0 +1,166 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Protest Riot', sans-serif;
+    cursor: none;
+}
+body{
+    position: relative;
+}
+.cursor{
+    display: flex;
+    background-color: #333;
+    width: 10px;
+    height: 10px;
+    transform: rotate(45deg);
+    border-radius:00% 0% 150% 0%;
+    box-shadow: 2px 2px 12px black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+header{
+    text-align: center;
+    width: 100%;
+    height: 10vh;
+    /* background-color: green; */
+}
+
+.images{
+    display: flex;
+    justify-content: center;
+    height: 60vh;
+    width: 100%;
+    
+
+    /* background-color: blue; */
+}
+
+.computer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: green; */
+    width: 40%;
+    transition: 2s;
+    user-select: none;
+    filter: drop-shadow(2px 2px 12px #C37E20);
+}
+.player{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: red; */
+    width: 40%;
+    transition: 2s;
+    user-select: none;
+    filter: drop-shadow(2px 2px 12px #C37E20);
+
+}
+.computer #computer{
+    height: 100%;
+    /* width: 100%; */
+    animation: shift1 2s infinite;
+    transform: scaleX(-1) rotate(-90deg);
+    transition: 2s;
+    /* background-color: green; */
+    
+    
+}
+.player #player{
+    height: 100%;
+    /* width: 100%; */
+    animation: shift 2s infinite;
+    transform: rotate(-90deg);
+    transition: 2s;
+    /* background-color: green; */
+}
+.buttons{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 10%;
+    height: 100%;
+    /* margin: 0 5%; */
+    /* background-color: green; */
+}
+.buttons button{
+    font-size: 50px;
+    width: 80%;
+    height: 20%;
+    margin: 4px;
+}
+.result{
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    height: 10vh;
+
+    text-align: center;
+}
+.result p{
+    font-size: 40px;
+}
+.result input{
+    text-align: center;
+    /* initial-value: 0; */
+    width: 40%;
+    height: 90%;
+}
+.reset{
+    width: 90%;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.reset #reset{
+    width: 10%;
+}
+
+@keyframes shake {
+    0%,100%{
+
+        transform:scaleX(-1) rotate(-90deg);
+    }
+    50%{
+        transform:scaleX(-1) rotate(-75deg);
+       
+    }
+    75%{
+        transform:scaleX(-1) rotate(-105deg);
+
+    }
+}
+@keyframes shake1 {
+    0%,100%{
+        
+        transform: rotate(-90deg);
+    }
+    50%{
+        transform: rotate(-75deg);
+    }
+    75%{
+        transform: rotate(-105deg);
+    
+    }
+}
+
+@keyframes shift{
+    0%,100%{
+        transform: rotate(-55deg);
+    }
+    35%,50%{
+        transform: rotate(-90deg);
+    }
+}
+@keyframes shift1{
+    0%,100%{
+        transform: scaleX(-1) rotate(-55deg);
+    }
+    35%,50%{
+        transform:scaleX(-1)  rotate(-90deg);
+    }
+}

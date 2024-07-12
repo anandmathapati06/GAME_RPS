@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&family=Protest+Riot&display=swap" rel="stylesheet">
+    <title>Stone,Paper and Cessior</title>
+</head>
+<body>
+<div class="cursor">
+
+</div>
+    <header>
+        <h1>CSS Rock-Paper-Scissors</h1>
+    </header>
+    <section>
+        <div class="images">
+        <div class="computer">
+            
+                <img id="computer" src="images/stone.png" alt="">
+            
+        </div>
+        <div class="player">
+            
+                <img id="player" src="images/stone.png" alt="">
+            
+        </div>
+  
+        <div class="buttons">     
+            <button class="btn" id="stone">&#x270A</button>
+            <button class="btn" id="paper">&#x1F590</button>
+            <button class="btn" id="scissor">&#x270C</button>
+        </div>
+    </div>
+        <div class="result">
+            <div class="c-count">
+                <input id="c_count" type="number" value="0" readonly>
+            </div>
+            <p id="r_text">Start Game!</p>
+            <div class="p-count">
+                <input  id="p_count" type="number" value="0" readonly>
+
+            </div>
+        </div>
+
+        <div class="reset">
+            <button id="reset">Restart</button>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
