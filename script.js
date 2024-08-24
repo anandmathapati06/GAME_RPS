@@ -1,8 +1,8 @@
 let buttons = document.querySelectorAll(".btn");
-let a = ["images/paper.png", "images/stone.png", "images/cessior.png"]
-let p = "images/paper.png"
-let st = "images/stone.png"
-let s = "images/cessior.png"
+let a = ["paper.png", "stone.png", "cessior.png"]
+let p = "paper.png"
+let st = "stone.png"
+let s = "cessior.png"
 let count =0
 let no = 2
 let cursor = document.querySelector(".cursor");
